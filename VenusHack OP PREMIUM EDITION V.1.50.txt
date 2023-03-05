@@ -10,6 +10,7 @@ local HWIDTable = {
 "5DD00655-0A49-4C84-8879-AF3E6297F991", --buyer
 "0A016448-CA13-4F9F-AF4A-C542F45B3FAD", --buyer
 "D88DD9F9-DADF-4520-B663-2DA0F7B4954A", --Rock
+"33387EE5-E805-4F2F-8019-26BBECBF1455" -- giveaway winner
 }
 local HWID = (game:GetService("RbxAnalyticsService"):GetClientId())
 
