@@ -218,13 +218,13 @@ local rootPart = character:WaitForChild("HumanoidRootPart")
     end)
     
     Section:NewButton("Animal Hitbox Extender V1.1 OP(Reset size)", "Make all animal hitbox bigger", function()
-        for i, v in pairs(game.Workspace.WORKSPACE_Entities.Animals:GetChildren()) do if v.Name == "\66\105\115\111\110" or v.Name == "\68\101\101\114" or v.Name == "\66\101\97\114" or v.Name == "\71\97\116\111\114" then v.HumanoidRootPart.Size = Vector3.new(1,1,1) v.Head.Size = Vector3.new(2,1,2) v.Body.Transparency = 1 v.HeadTransparency = 1 v.HumanoidRootPart.Transparency = 1 v.Head.Transparency = 1 end end
+        for i, v in pairs(game.Workspace.WORKSPACE_Entities.Animals:GetChildren()) do if v.Name == "\66\105\115\111\110" or v.Name == "\68\101\101\114" or v.Name == "\66\101\97\114" or v.Name == "\71\97\116\111\114" then v.HumanoidRootPart.Size = Vector3.new(1,1,1) v.Head.Size = Vector3.new(2,1,2) v.Body.Transparency = 1 v.Head.Transparency = 1 v.HumanoidRootPart.Transparency = 1 v.Head.Transparency = 1 end end
     end)
     Section:NewButton("Animal Hitbox Extender V1.1 OP(SIZE = 10)", "Make all animal hitbox bigger", function()
-        for i, v in pairs(game.Workspace.WORKSPACE_Entities.Animals:GetChildren()) do if v.Name == "\66\105\115\111\110" or v.Name == "\68\101\101\114" or v.Name == "\66\101\97\114" or v.Name == "\71\97\116\111\114" then v.HumanoidRootPart.Size = Vector3.new(5,5,5) v.Head.Size = Vector3.new(10,10,10) v.Body.Transparency = 0.5 v.HeadTransparency = 0.5 v.HumanoidRootPart.Transparency = 0.5 end end
+        for i, v in pairs(game.Workspace.WORKSPACE_Entities.Animals:GetChildren()) do if v.Name == "\66\105\115\111\110" or v.Name == "\68\101\101\114" or v.Name == "\66\101\97\114" or v.Name == "\71\97\116\111\114" then v.HumanoidRootPart.Size = Vector3.new(5,5,5) v.Head.Size = Vector3.new(10,10,10) v.Body.Transparency = 0.5 v.Head.Transparency = 0.5 v.HumanoidRootPart.Transparency = 0.5 end end
     end)
     Section:NewButton("Animal Hitbox Extender V1.1 OP(SIZE = 20)", "Make all animal hitbox bigger", function()
-        for i, v in pairs(game.Workspace.WORKSPACE_Entities.Animals:GetChildren()) do if v.Name == "\66\105\115\111\110" or v.Name == "\68\101\101\114" or v.Name == "\66\101\97\114" or v.Name == "\71\97\116\111\114" then v.HumanoidRootPart.Size = Vector3.new(5,5,5) v.Head.Size = Vector3.new(20,20,20) v.Body.Transparency = 0.5 v.HeadTransparency = 0.5 v.HumanoidRootPart.Transparency = 0.5 end end
+        for i, v in pairs(game.Workspace.WORKSPACE_Entities.Animals:GetChildren()) do if v.Name == "\66\105\115\111\110" or v.Name == "\68\101\101\114" or v.Name == "\66\101\97\114" or v.Name == "\71\97\116\111\114" then v.HumanoidRootPart.Size = Vector3.new(5,5,5) v.Head.Size = Vector3.new(20,20,20) v.Body.Transparency = 0.5 v.Head.Transparency = 0.5 v.HumanoidRootPart.Transparency = 0.5 end end
     end)
     
     local Tab = Window:NewTab("Combat W")
