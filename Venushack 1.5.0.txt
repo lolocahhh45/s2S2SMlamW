@@ -454,7 +454,7 @@ Section:NewButton("Aimbot Hub (better option)", "Nothing happen? tell in dc", fu
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Blissful4992/Miscellaneous/main/UNIVERSAL.lua"))()
 end)
 Section:NewLabel("Silent aim")
-Section:NewButton("Silent aim (Pending fix)", "Toggle = RightControl,RightShift (ADDED IN 1.4.5)", function()
+Section:NewButton("Silent aim (Fixed)", "Toggle = RightControl,RightShift (ADDED IN 1.4.5)", function()
     -- init
     if not game:IsLoaded() then 
         game.Loaded:Wait()
