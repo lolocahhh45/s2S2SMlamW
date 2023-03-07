@@ -23,7 +23,7 @@ FontSize = Enum.FontSize.Size24; --font size changeable
 })
 wait()
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("Venushack OP V1.5.0", "BloodTheme")
+local Window = Library.CreateLib("Venushack OP V1.5.0 | Script made by lolocahhh45#7354", "BloodTheme")
 
 local Tab = Window:NewTab("Player")
 local Section = Tab:NewSection("Solo script")
