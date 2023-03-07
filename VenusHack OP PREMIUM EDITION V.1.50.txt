@@ -504,8 +504,8 @@ local rootPart = character:WaitForChild("HumanoidRootPart")
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Blissful4992/Miscellaneous/main/UNIVERSAL.lua"))()
     end)
     Section:NewLabel("Silent aim")
-    Section:NewButton("Silent aim (Pending fix)", "Toggle = RightControl,RightShift (ADDED IN 1.4.5)", function()
-        -- init
+    Section:NewButton("Silent aim hub (Fixed)", "Toggle = RightControl,RightShift (ADDED IN 1.4.5)", function()
+    -- init
     if not game:IsLoaded() then 
         game.Loaded:Wait()
     end
@@ -523,7 +523,7 @@ local rootPart = character:WaitForChild("HumanoidRootPart")
         TeamCheck = false,
         VisibleCheck = false, 
         TargetPart = "HumanoidRootPart",
-        SilentAimMethod = "Best Method",
+        SilentAimMethod = "Best_Method",
         
         FOVRadius = 130,
         FOVVisible = false,
@@ -583,7 +583,7 @@ local rootPart = character:WaitForChild("HumanoidRootPart")
     fov_circle.Color = Color3.fromRGB(54, 57, 241)
     
     local ExpectedArguments = {
-        FindPartOnRayWithIgnoreList = {
+        Best_Method = {
             ArgCountRequired = 3,
             Args = {
                 "Instance", "Ray", "table", "boolean", "boolean"
@@ -746,7 +746,7 @@ local rootPart = character:WaitForChild("HumanoidRootPart")
     end
     
     -- ui creating & handling
-    local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xaxaxaxaxaxaxaxaxa/Libraries/main/UI's/Linoria/Source.lua"))()
+    local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/violin-suzutsuki/LinoriaLib/main/Library.lua"))()
     Library:SetWatermark("Solo Script")
     
     local Window = Library:CreateWindow("silent aim OP, Modified by solo script")
@@ -828,7 +828,7 @@ local rootPart = character:WaitForChild("HumanoidRootPart")
     fov_circle.Color = Color3.fromRGB(54, 57, 241)
     
     local ExpectedArguments = {
-        FindPartOnRayWithIgnoreList = {
+        Best_Method = {
             ArgCountRequired = 3,
             Args = {
                 "Instance", "Ray", "table", "boolean", "boolean"
@@ -991,8 +991,7 @@ local rootPart = character:WaitForChild("HumanoidRootPart")
     end
     
     -- ui creating & handling
-    local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xaxaxaxaxaxaxaxaxa/Libraries/main/UI's/Linoria/Source.lua"))()
-    Library:SetWatermark("Solo Script")
+
     
     local Window = Library:CreateWindow("Universal Silent Aim MODIFIED BY SOLO SCRIPT")
     local GeneralTab = Window:AddTab("General")
@@ -1019,7 +1018,7 @@ local rootPart = character:WaitForChild("HumanoidRootPart")
             SilentAimSettings.TargetPart = Options.TargetPart.Value
         end)
         Main:AddDropdown("Method", {Text = "Silent Aim Method", Default = SilentAimSettings.SilentAimMethod, Values = {
-            "FindPartOnRayWithIgnoreList",
+            "Best_Method",
         }}):OnChanged(function() 
             SilentAimSettings.SilentAimMethod = Options.Method.Value 
         end)
@@ -1143,8 +1142,8 @@ local rootPart = character:WaitForChild("HumanoidRootPart")
         local self = Arguments[1]
         local chance = CalculateChance(SilentAimSettings.HitChance)
         if Toggles.aim_Enabled.Value and self == workspace and not checkcaller() and chance == true then
-            if Method == "FindPartOnRayWithIgnoreList" and Options.Method.Value == Method then
-                if ValidateArguments(Arguments, ExpectedArguments.FindPartOnRayWithIgnoreList) then
+            if Method == "Best_Method" and Options.Method.Value == Method then
+                if ValidateArguments(Arguments, ExpectedArguments.Best_Method) then
                     local A_Ray = Arguments[2]
     
                     local HitPart = getClosestPlayer()
