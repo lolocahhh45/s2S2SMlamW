@@ -25,7 +25,7 @@ game.StarterGui:SetCore("ChatMakeSystemMessage", {
     })
     wait()
     game.StarterGui:SetCore("ChatMakeSystemMessage", {
-    Text = "The wild west gui OP v1.5.0 PremiumVersion"; --chat notification
+    Text = "The wild west gui OP v1.5.1 PremiumVersion"; --chat notification
     Font = Enum.Font.GothamBlack; --font changeable
     FontSize = Enum.FontSize.Size24; --font size changeable
     })
@@ -43,7 +43,7 @@ game.StarterGui:SetCore("ChatMakeSystemMessage", {
     })
     wait()
     local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-    local Window = Library.CreateLib("Venushack Premium OP V1.5.0", "BloodTheme")
+    local Window = Library.CreateLib("Venushack Premium OP V1.5.1", "BloodTheme")
     
     local Tab = Window:NewTab("Player")
     local Section = Tab:NewSection("Solo script")
