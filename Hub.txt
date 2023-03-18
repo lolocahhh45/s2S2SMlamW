@@ -1,12 +1,14 @@
 --loadstring(game:HttpGet('SCRIPTLINK', true))()
 
-if game.PlaceId == 2317712696 -- The wild west
-then thenloadstring(game:HttpGet('https://raw.githubusercontent.com/lolocahhh45/s2S2SMlamW/main/Venushack%201.5.0.txt', true))()
-elseif game.PlaceId == 6924952561 -- Clover city
-then loadstring(game:HttpGet('https://raw.githubusercontent.com/lolocahhh45/s2S2SMlamW/main/3', true))()
-elseif game.PlaceId ==  --Waiting for game
-else --If the game is not finded then this hub will be executed
+if game.PlaceId == 2317712696 then -- The wild west
+loadstring(game:HttpGet('https://raw.githubusercontent.com/lolocahhh45/s2S2SMlamW/main/Venushack%201.5.0.txt', true))()
+_G.Supported = true
+elseif game.PlaceId == 6924952561 then -- Clover city
+loadstring(game:HttpGet('https://raw.githubusercontent.com/lolocahhh45/s2S2SMlamW/main/3', true))()
+_G.Supported = true
+end
 
+if _G.Supported == nil then
 game.StarterGui:SetCore("ChatMakeSystemMessage", {
 Text = "Script Executed!"; --chat notification
 Font = Enum.Font.GothamBlack; --font changeable
@@ -2801,5 +2803,5 @@ local Tab = Window:NewTab("Credits")
     Section:NewButton("COPY DISCORD SERVER", "", function()
         setclipboard("https://discord.com/invite/fzSAVMKGzv")
     end)
-
 end
+
