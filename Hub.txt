@@ -20,13 +20,13 @@ FontSize = Enum.FontSize.Size24; --font size changeable
 })
 wait()
 game.StarterGui:SetCore("ChatMakeSystemMessage", {
-Text = "SC hub 1.0"; --chat notification
+Text = "SC hub 1.1"; --chat notification
 Font = Enum.Font.GothamBlack; --font changeable
 FontSize = Enum.FontSize.Size24; --font size changeable
 })
 wait(2)
 game.StarterGui:SetCore("ChatMakeSystemMessage", {
-Text = "SC hub 1.0"; --chat notification
+Text = "Loading..."; --chat notification
 Font = Enum.Font.GothamBlack; --font changeable
 FontSize = Enum.FontSize.Size24; --font size changeable
 })
@@ -44,7 +44,7 @@ _G.lol = 16 --Walkspeed
 
 --Setup 2 ended
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("SC hub 1.0 | By lolocahhh45#7354 | Game = ???", "BloodTheme")
+local Window = Library.CreateLib("SC hub 1.1 | By lolocahhh45#7354", "BloodTheme")
 
 local Tab = Window:NewTab("Main")
 local Section = Tab:NewSection("Solo script")
