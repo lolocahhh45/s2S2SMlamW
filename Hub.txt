@@ -8,6 +8,7 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/lolocahhh45/s2S2SMlam
 _G.Supported = true
 elseif game.PlaceId == 2859914153 then --Prison break
 loadstring(game:HttpGet('https://raw.githubusercontent.com/lolocahhh45/s2S2SMlamW/main/Prison%20break', true))()
+_G.Supported = true
 end
 
 if _G.Supported == nil then game.StarterGui:SetCore("SendNotification", {Title = "GAME NO SUPPORTED", Text = "This game is not supported, A good GUI with much things has been load!, Made by lolocahhh#7354", Duration = 5,})
