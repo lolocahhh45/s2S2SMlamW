@@ -8,7 +8,8 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/lolocahhh45/s2S2SMlam
 _G.Supported = true
 end
 
-if _G.Supported == nil then
+if _G.Supported == nil then game.StarterGui:SetCore("SendNotification", {Title = "GAME NO SUPPORTED", Text = "This game is not supported, A good GUI with much things has been load!, Made by lolocahhh#7354", Duration = 5,})
+
 game.StarterGui:SetCore("ChatMakeSystemMessage", {
 Text = "Script Executed!"; --chat notification
 Font = Enum.Font.GothamBlack; --font changeable
