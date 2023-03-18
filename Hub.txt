@@ -1,7 +1,7 @@
 --loadstring(game:HttpGet('SCRIPTLINK', true))()
 
 if game.PlaceId == 2317712696 -- The wild west
-thenloadstring(game:HttpGet('https://raw.githubusercontent.com/lolocahhh45/s2S2SMlamW/main/Venushack%201.5.0.txt', true))()
+then thenloadstring(game:HttpGet('https://raw.githubusercontent.com/lolocahhh45/s2S2SMlamW/main/Venushack%201.5.0.txt', true))()
 elseif game.PlaceId == 6924952561 -- Clover city
 then loadstring(game:HttpGet('https://raw.githubusercontent.com/lolocahhh45/s2S2SMlamW/main/3', true))()
 elseif game.PlaceId ==  --Waiting for game
