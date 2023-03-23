@@ -15,6 +15,9 @@ _G.Supported = true
 elseif game.PlaceId == 7056922815 then -- Reaper 2
 loadstring(game:HttpGet("https://raw.githubusercontent.com/XO-3S-CL-VCK-jf-3HDM/Products/main/Reaper-2.lua"))()
 _G.Supported = true print("Script made by L4RSO but inproved by solo script")
+elseif game.PlaceID == https://www.roblox.com/games/155615604/Prison-Life then -- Prison Life
+loadstring(game:HttpGet('https://github.com/lolocahhh45/s2S2SMlamW/blob/main/prison%20life', true))()
+_G.Supported = true
 end
 
 if _G.Supported == nil then game.StarterGui:SetCore("SendNotification", {Title = "GAME NO SUPPORTED", Text = "This game is not supported, A good GUI with much things has been load!, Made by lolocahhh#7354", Duration = 5,})
