@@ -15,7 +15,7 @@ _G.Supported = true
 elseif game.PlaceId == 7056922815 then -- Reaper 2
 loadstring(game:HttpGet("https://raw.githubusercontent.com/XO-3S-CL-VCK-jf-3HDM/Products/main/Reaper-2.lua"))()
 _G.Supported = true print("Script made by L4RSO but inproved by solo script")
-elseif game.PlaceID == 155615604 then -- Prison Life
+elseif game.PlaceId == 155615604 then -- Prison Life
 loadstring(game:HttpGet('https://raw.githubusercontent.com/lolocahhh45/s2S2SMlamW/main/prison%20life', true))()
 _G.Supported = true
 end
