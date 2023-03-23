@@ -6,12 +6,15 @@ _G.Supported = true
 elseif game.PlaceId == 6924952561 then -- Clover city
 loadstring(game:HttpGet('https://raw.githubusercontent.com/lolocahhh45/s2S2SMlamW/main/3', true))()
 _G.Supported = true
-elseif game.PlaceId == 2859914153 then --Prison break
+elseif game.PlaceId == 2859914153 then -- Prison break
 loadstring(game:HttpGet('https://raw.githubusercontent.com/lolocahhh45/s2S2SMlamW/main/Prison%20break', true))()
 _G.Supported = true
-elseif game.PlaceId == 8260276694 then --Ability wars
+elseif game.PlaceId == 8260276694 then -- Ability wars
 loadstring(game:HttpGet('https://raw.githubusercontent.com/lolocahhh45/s2S2SMlamW/main/Ability%20wars', true))()
 _G.Supported = true
+elseif game.PlaceId == 7056922815 then -- Reaper 2
+loadstring(game:HttpGet("https://raw.githubusercontent.com/XO-3S-CL-VCK-jf-3HDM/Products/main/Reaper-2.lua"))()
+_G.Supported = true print("Script made by L4RSO but inproved by solo script")
 end
 
 if _G.Supported == nil then game.StarterGui:SetCore("SendNotification", {Title = "GAME NO SUPPORTED", Text = "This game is not supported, A good GUI with much things has been load!, Made by lolocahhh#7354", Duration = 5,})
