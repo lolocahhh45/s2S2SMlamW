@@ -47,7 +47,7 @@ game.StarterGui:SetCore("ChatMakeSystemMessage", {
     })
     wait()
     local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-    local Window = Library.CreateLib("Venushack Premium OP V1.5.1", "BloodTheme")
+    local Window = Library.CreateLib("V1.5.1 | Check credits please!", "BloodTheme")
     
     local Tab = Window:NewTab("Player")
     local Section = Tab:NewSection("Solo script")
@@ -5031,12 +5031,20 @@ rootPart.CFrame = newPosition
     Section:NewKeybind("Gui toggle", "Toggle gui with F or changue to other key", Enum.KeyCode.F, function()
         Library:ToggleUI()
     end)
-    Section:NewButton("COPY DISCORD SERVER", "", function()
+    Section:NewButton("SERVER DELETED!", "Copy button", function()
         setclipboard("https://discord.com/invite/fzSAVMKGzv")
     end)
     --Get id acces =
 
 -- setclipboard(game:GetService("RbxAnalyticsService"):GetClientId())
+
+Section:NewLabel("----------------------------------------------")
+Section:NewLabel("My account is disabled(Maybe permanent)")
+Section:NewLabel("lolocahhh45_YT#6108")
+Section:NewButton("Copy user button", "xD", function()
+setclipboard("lolocahhh45_YT#6108")
+end)
+Section:NewLabel("----------------------------------------------")
 
 Section:NewLabel("AntiCheatBypasser")
 Section:NewLabel("Using this you can't shoot")
