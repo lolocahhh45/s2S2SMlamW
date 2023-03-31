@@ -5042,6 +5042,7 @@ rootPart.CFrame = newPosition
 Section:NewLabel("----------------------------------------------")
 Section:NewLabel("My account is disabled(Maybe permanent)")
 Section:NewLabel("lolocahhh45_YT#6108")
+Section:NewLabel("Contact me please!")
 Section:NewButton("Copy user button", "xD", function()
 setclipboard("lolocahhh45_YT#6108")
 end)
