@@ -1,4 +1,11 @@
 game.StarterGui:SetCore("ChatMakeSystemMessage", {
+Text = "My discord account has been banned | Want more info? dm lolocahhh45_YT#6108"; --chat notification
+Font = Enum.Font.GothamBlack; --font changeable
+FontSize = Enum.FontSize.Size24; --font size changeable
+})
+wait()
+
+game.StarterGui:SetCore("ChatMakeSystemMessage", {
 Text = "Script Executed!"; --chat notification
 Font = Enum.Font.GothamBlack; --font changeable
 FontSize = Enum.FontSize.Size24; --font size changeable
