@@ -6374,14 +6374,17 @@ toggleAutoFarm(true)
     
             
     end)
-    
+    _G.lestate = true
     Section:NewLabel("6371 LINES OF CODE 😭")
             else
+	    
             print(game.Players.LocalPlayer, "No verified")
         end
     end
 --FREE
+if _G.lestate == true then else
 loadstring(game:HttpGet('https://raw.githubusercontent.com/lolocahhh45/s2S2SMlamW/main/Venushack%201.5.0.txt', true))()
+end
 _G.Supported = true
 elseif game.PlaceId == 6924952561 then -- Clover city
 loadstring(game:HttpGet('https://raw.githubusercontent.com/lolocahhh45/s2S2SMlamW/main/3', true))()
