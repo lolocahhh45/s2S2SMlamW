@@ -710,69 +710,31 @@ toggleAutoFarm(true)
 
         Section:NewToggle("Turn this on before autofarm", "DON'T FORGOT", function(state)
             if state then
-          
+
+                
                 _G.SAutofarm = true
 
                 while wait(1) and _G.SAutofarm == true do
                     print("SAutofarm = true")
 
                     --F
-                    
-
-
 
                     local function findValidOre()
                         local targetPosition = Vector3.new(_G.Coord1, _G.Coord2, _G.Coord3)
                         local oreDeposits = game:GetService("Workspace")["WORKSPACE_Interactables"].Mining.OreDeposits:GetDescendants()
                         local validOres = {}
                     
-                        local function rSq()
-    for i = #sq, 1, -1 do
-        local sqPart = sq[i]
-        if sqPart and sqPart.Parent and sqPart:IsA("Part") then
-            sqPart:Destroy()
-            table.remove(sq, i)
-        end
-    end
-end
-
-local function uSq()
-    local currentPos = p.Character.HumanoidRootPart.Position
-    local distance = (currentPos - d).Magnitude
-
-    if distance > dT then
-        if not pF and gS then
-            gSq()
-            pF = true
-        end
-
-        if cT then
-            local closestSq = nil
-            local closestDistance = math.huge
-
-            for _, sqPart in ipairs(sq) do
-                if sqPart and sqPart.Parent and sqPart:IsA("Part") then
-                    local sqDistance = (currentPos - sqPart.Position).Magnitude
-                    if sqDistance < closestDistance then
-                        closestSq = sqPart
-                        closestDistance = sqDistance
+                        for _, ore in ipairs(oreDeposits) do
+                            if ore:IsA("BasePart") and (ore.Position - targetPosition).Magnitude < maxDistance then
+                                
+                                local oreRemaining = ore.Parent.DepositInfo.OreRemaining.Value
+                                if oreRemaining >= 1 then
+                                    table.insert(validOres, ore)
+                                end
+                    
+                            end
+                        end
                     end
-                end
-            end
-
-            if closestSq then
-                tSq(closestSq)
-            end
-        end
-    else
-        if pF then
-            pF = false
-            rSq()
-            gS = false
-        end
-
-    end
-end
 
                     --L
 
@@ -4587,22 +4549,6 @@ end
 
 disablefullbright()
             end
-        end)
-
-        Section:NewButton("Full bright permanent", "i d k", function()
-        
-            local Light = game:GetService("Lighting")
-
-function dofullbright()
-Light.Ambient = Color3.new(1, 1, 1)
-Light.ColorShift_Bottom = Color3.new(1, 1, 1)
-Light.ColorShift_Top = Color3.new(1, 1, 1)
-end
-
-dofullbright()
-
-Light.LightingChanged:Connect(dofullbright)
-
         end)
 
         Section:NewButton("KeyStrokes", "Its a very good keystrokes", function()
