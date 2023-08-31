@@ -12,7 +12,7 @@ if game.PlaceId == 2317712696 then -- The wild west
 loadstring(game:HttpGet('https://pastebin.com/raw/bZYH9zm1', true))()
 --FREE
 if _G.lestate == true then else
-loadstring(game:HttpGet('https://raw.githubusercontent.com/lolocahhh45/s2S2SMlamW/main/Venushack%201.5.0.txt', true))()
+loadstring(game:HttpGet('https://pastebin.com/raw/nmJKwHYK', true))()
 end
 _G.Supported = true
 elseif game.PlaceId == 6924952561 then -- Clover city
