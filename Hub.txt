@@ -1,12 +1,5 @@
 --loadstring(game:HttpGet('SCRIPTLINK', true))()
 
-game.StarterGui:SetCore("ChatMakeSystemMessage", {
-Text = "My discord account has been banned | Want more info? dm lolocahhh45_YT#6108"; --chat notification
-Font = Enum.Font.GothamBlack; --font changeable
-FontSize = Enum.FontSize.Size24; --font size changeable
-})
-wait()
-
 if game.PlaceId == 2317712696 then -- The wild west
 --PREMIUM (if you don't have premium no problem)
 loadstring(game:HttpGet('https://pastebin.com/raw/iHS5ZpjT', true))()
