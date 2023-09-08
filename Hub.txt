@@ -1,5 +1,127 @@
 --loadstring(game:HttpGet('SCRIPTLINK', true))()
 
+-- Instances:
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local TextlabelKeysystem = Instance.new("TextLabel")
+local KeyInput = Instance.new("TextBox")
+local Solo_ScriptLogo = Instance.new("ImageLabel")
+local Copykeylink = Instance.new("TextButton")
+local Enterkey = Instance.new("TextButton")
+
+-- Properties:
+ScreenGui.Parent = game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Frame.BorderColor3 = Color3.fromRGB(85, 0, 0)
+Frame.BorderSizePixel = 3
+Frame.Position = UDim2.new(0.373311073, 0, 0.377066135, 0)
+Frame.Size = UDim2.new(0, 335, 0, 142)
+ScreenGui.ResetOnSpawn = false
+
+TextlabelKeysystem.Name = "Text label Key system"
+TextlabelKeysystem.Parent = Frame
+TextlabelKeysystem.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextlabelKeysystem.BorderColor3 = Color3.fromRGB(170, 0, 0)
+TextlabelKeysystem.Position = UDim2.new(0.0542857125, 0, 0.0913557634, 0)
+TextlabelKeysystem.Size = UDim2.new(0, 172, 0, 37)
+TextlabelKeysystem.Font = Enum.Font.SourceSans
+TextlabelKeysystem.Text = "Solo Script | Key System"
+TextlabelKeysystem.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextlabelKeysystem.TextSize = 14.000
+
+KeyInput.Name = "KeyInput"
+KeyInput.Parent = Frame
+KeyInput.BackgroundColor3 = Color3.fromRGB(85, 0, 0)
+KeyInput.BorderColor3 = Color3.fromRGB(0, 0, 0)
+KeyInput.BorderSizePixel = 0
+KeyInput.Position = UDim2.new(0.0542856716, 0, 0.426347762, 0)
+KeyInput.Size = UDim2.new(0, 172, 0, 35)
+KeyInput.Font = Enum.Font.SourceSans
+KeyInput.PlaceholderColor3 = Color3.fromRGB(0, 0, 0)
+KeyInput.PlaceholderText = "Key"
+KeyInput.Text = ""
+KeyInput.TextColor3 = Color3.fromRGB(0, 0, 0)
+KeyInput.TextSize = 14.000
+KeyInput.TextWrapped = true
+
+-- Función que se ejecuta cuando se pierde el foco en el cuadro de texto
+local function OnKeyInputFocusLost()
+    print("Focus lost event triggered")
+    local userInput = game:GetService("UserInputService")
+    local player = game.Players.LocalPlayer
+
+    if userInput:GetFocusedTextBox() == KeyInput and KeyInput.Text ~= "" then
+        local enteredText = KeyInput.Text
+        _G.KeyInput2 = enteredText
+    end
+end
+
+
+-- Conecta la función al evento FocusLost del cuadro de texto
+KeyInput.FocusLost:Connect(OnKeyInputFocusLost)
+
+
+Solo_ScriptLogo.Name = "Solo_ScriptLogo"
+Solo_ScriptLogo.Parent = Frame
+Solo_ScriptLogo.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Solo_ScriptLogo.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Solo_ScriptLogo.BorderSizePixel = 0
+Solo_ScriptLogo.Position = UDim2.new(0.619232476, 0, 0.126566932, 0)
+Solo_ScriptLogo.Size = UDim2.new(0, 111, 0, 107)
+Solo_ScriptLogo.Image = "rbxassetid://14719013860"
+
+Copykeylink.Name = "Copy key link"
+Copykeylink.Parent = Frame
+Copykeylink.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
+Copykeylink.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Copykeylink.BorderSizePixel = 0
+Copykeylink.Position = UDim2.new(0.0542857125, 0, 0.718311131, 0)
+Copykeylink.Size = UDim2.new(0, 80, 0, 22)
+Copykeylink.Font = Enum.Font.SourceSans
+Copykeylink.Text = "Copy key link"
+Copykeylink.TextColor3 = Color3.fromRGB(0, 0, 0)
+Copykeylink.TextSize = 14.000
+Copykeylink.MouseButton1Click:Connect(function()
+	game.StarterGui:SetCore("SendNotification", {Title = "Copied!", Text = "Discord server copied! (you can obtain the key in discord)", Duration = 10,})
+	setclipboard("https://discord.gg/gYqbqSNUvK")
+end)
+
+Enterkey.Name = "Enter key"
+Enterkey.Parent = Frame
+Enterkey.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
+Enterkey.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Enterkey.BorderSizePixel = 0
+Enterkey.Position = UDim2.new(0.317526668, 0, 0.718311131, 0)
+Enterkey.Size = UDim2.new(0, 83, 0, 22)
+Enterkey.Font = Enum.Font.SourceSans
+Enterkey.Text = "Enter key"
+Enterkey.TextColor3 = Color3.fromRGB(0, 0, 0)
+Enterkey.TextSize = 14.000
+
+local CloseButton = Instance.new("TextButton")
+CloseButton.Name = "CloseButton"
+CloseButton.Parent = Frame
+CloseButton.BackgroundColor3 = Color3.fromRGB(100, 0, 0) -- Color rojo
+CloseButton.Position = UDim2.new(0.94, 0, 0, 0) -- En la esquina superior derecha
+CloseButton.Size = UDim2.new(0, 20, 0, 20)
+CloseButton.Font = Enum.Font.SourceSansBold
+CloseButton.Text = "X"
+CloseButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+CloseButton.BorderSizePixel = 0
+CloseButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+CloseButton.TextSize = 14.000
+
+-- Conecta la función al evento MouseButton1Click del botón "Enter key"
+Enterkey.MouseButton1Click:Connect(function()
+    local enteredText = KeyInput.Text
+    if enteredText == "QNmzloPQI29jrasi2r" then
+        Frame:Destroy()
+        
+--Start of SC HUB
+
 if game.PlaceId == 2317712696 then -- The wild west
 --PREMIUM (if you don't have premium no problem)
 loadstring(game:HttpGet('https://pastebin.com/raw/iHS5ZpjT', true))()
@@ -2822,4 +2944,18 @@ local Tab = Window:NewTab("Credits")
         setclipboard("https://discord.com/invite/fzSAVMKGzv")
     end)
 end
+
+--End of SC HUB
+    else
+        game.StarterGui:SetCore("SendNotification", {Title = "🔴 INCORRECT 🔴", Text = "Incorrect Key.", Duration = 5})
+    end
+end)
+
+-- Manejador de eventos para el botón "X"
+CloseButton.MouseButton1Click:Connect(function()
+    Frame:Destroy()
+end)
+
+
+
 
