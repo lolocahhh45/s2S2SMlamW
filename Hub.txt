@@ -117,7 +117,7 @@ CloseButton.TextSize = 14.000
 -- Conecta la función al evento MouseButton1Click del botón "Enter key"
 Enterkey.MouseButton1Click:Connect(function()
     local enteredText = KeyInput.Text
-    if enteredText == "QNmzloPQI29jrasi2r" then
+    if enteredText == "Lkwksip2orlAMEe" then
         Frame:Destroy()
         
 --Start of SC HUB
